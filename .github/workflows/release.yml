@@ -18,4 +18,4 @@ jobs:
     steps:
       - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
       - run: make package
-      - run: gh release create "$GITHUB_REF_ui-service.context" build.nosync/ui-service.context.zip build.nosync/SHA256SUMS --generate-notes --verify-tag
+      - run: gh release create "$GITHUB_REF_NAME" build.nosync/ui-service.context.zip build.nosync/SHA256SUMS --generate-notes --verify-tag
